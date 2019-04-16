@@ -1,0 +1,81 @@
+<!DOCTYPE html> 
+<!--
+    Name: Your Name 
+    Date Created: Today's date 
+    Most recent revision:
+-->
+<html lang="en"> 
+    <head> 
+        <title>Girthy Burritos</title>	
+    </head> 
+
+    <body>
+        <main>
+            <header>
+                <h1>Girthy Burritos</h1>
+            </header>
+
+            <nav>
+                <hr />
+                <a href="index.html"><p>Home</p></a>
+                <a href="menu.html"><p>Menu</p></a>
+                <a href="contact.html"><p>Contact Us</p></a>
+                <hr />
+            </nav>
+
+            <form action="restaurant.html" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br />
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email"><br />
+
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone"><br />
+
+                <label for="inquiry">Reason for Inquiry:</label>
+                <select id="inquiry" name="inquiry">
+                    <option value="default">Catering</option>
+                    <option value="private">Private Party</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                </select><br />
+
+                <label for="info">Additional Information:</label>
+                <textarea id="info" name="info"></textarea>
+
+                <legend>Have you been to the restaurant?</legend>
+                <input type="radio" id="choice1" name="visit" value="yes">
+                <label for="choice1">Yes</label>
+                <input type="radio" id="choice2" name="visit" value="no">
+                <label for="choice2">No</label>
+
+                <legend>Best days to contact you?</legend>
+                <input type="checkbox" id="monday" name="monday">
+                <label for="monday">M</label>
+
+                <input type="checkbox" id="tuesday" name="tuesday">
+                <label for="tuesday">T</label>
+
+                <input type="checkbox" id="wednesday" name="wednesday">
+                <label for="wednesday">W</label>
+
+                <input type="checkbox" id="thursday" name="thursday">
+                <label for="thursday">Th</label>
+
+                <input type="checkbox" id="friday" name="friday">
+                <label for="friday">F</label><br />
+
+                <input type="submit" id="submit" name="submit" value="Send Request">
+            </form>
+            
+            <footer>
+                <hr />
+                <p>235 Barton Way, Louisville, Kentucky, 40018</p>
+                <p>502-111-0000</p>
+                <hr />
+            </footer>
+            
+        </main>
+    </body> 
+</html
