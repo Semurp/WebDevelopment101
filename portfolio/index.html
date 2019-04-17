@@ -7,6 +7,12 @@
 <html lang="en">
     <head>
         <title>Seth's Portfolio</title>
+        <link href="teststyles.css" rel="stylesheet" type="text/css" />
+        <style>
+            header {
+        background-color: darkgray;
+    }
+        </style>
     </head>
 
     <body>
@@ -15,17 +21,16 @@
                 <h1>Portfolio for Seth Murphy</h1>
             </header>
 
-            <nav>
-                <hr />
-                    <!-- Need to add links to projects.html, contact.html, and testimonials.html -->
+            <nav class="border">
+                <hr style="border: thin dotted red;" />
                     <p><a href="projects.html">Projects</a></p>
                     <p><a href="contact.html">Contacts</a></p>
                     <p><a href="testimonials.html">Testimonials</a></p>
-                <hr />
+                <hr style="width: 50%; border: 2px solid blueviolet;"/>
             </nav>
 
             <section>
-                <article id="about-me">
+                <article id="about-me" class="border">
                     <h2><em>About Me</em></h2>
                         <a href="index.html"><img src="images/profilepic2.png" alt="Portrait of Seth Murphy" /></a>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Sed augue mi</strong>, posuere in cursus sit amet, bibendum quis sapien. Duis ullamcorper orci et nisi condimentum interdum. Curabitur enim quam, ullamcorper eu erat eleifend, sollicitudin sagittis turpis. Curabitur nec ultrices felis, at malesuada augue. Nulla facilisi. Integer semper magna id nisl volutpat ornare. Quisque tempor vehicula metus.</p>
@@ -33,7 +38,7 @@
                         <p>Cras iaculis sed odio vel hendrerit. Sed vehicula elementum urna, at tempus risus ullamcorper sit amet. Vivamus posuere urna lectus, nec ullamcorper turpis ullamcorper sit amet. Nulla quis ipsum ac eros condimentum facilisis. Donec id feugiat turpis. Donec sit amet eros posuere nulla efficitur venenatis non non nisl. Duis vitae blandit nunc. Nulla faucibus ante malesuada nunc mollis, id pulvinar sapien tincidunt. Praesent in commodo mauris. <strong>Phasellus posuere</strong> nisi vitae risus pharetra tempor. Integer ac faucibus mauris, in suscipit est.</p>
                 </article>
 
-                <article id="past-experiences">
+                <article id="experience">
                     <h2><em>Past Experiences</em></h2>
                         <img src="images/past.png" alt="Photo of open landscape" />
                         <table border="1">
@@ -100,7 +105,7 @@
                 </article>
             </section>
 
-            <footer>    
+            <footer style="background-color: fuchsia">    
                 <hr />
                 <p>&copy; 2020  Seth Murphy. All Rights Reserved.</p>
             </footer>
