@@ -7,6 +7,43 @@
 <html lang="en">
     <head>
         <title>Seth's Portfolio</title>
+        <link href="styles/main.css" rel="stylesheet" type="text/css" />
+        <style>
+            caption {
+                font-weight: bold;
+                font-size: 1.2em;
+                margin-bottom: 8px;
+            }
+            
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 5px 10px;
+            }
+
+            table {
+                width: 90%;
+                margin: auto;
+            }
+
+            tr {
+                height: 30px;
+            }
+
+            th {
+                background-color: #035E7B;
+                color: #f2eded; 
+            }
+
+            tr:nth-child(odd) {
+                background-color: #999A7E;
+            }
+
+            tr:nth-child(even) {
+                background-color: #F6F7DF;
+            }
+        
+        </style>
     </head>
 
     <body>
@@ -16,12 +53,9 @@
             </header>
 
             <nav>
-                <hr />
-                    <!-- Need to add links to projects.html, contact.html, and testimonials.html -->
-                    <p><a href="projects.html">Projects</a></p>
-                    <p><a href="contact.html">Contacts</a></p>
-                    <p><a href="testimonials.html">Testimonials</a></p>
-                <hr />
+                <p><a href="projects.html">Projects</a></p>
+                <p><a href="contact.html">Contacts</a></p>
+                <p><a href="testimonials.html">Testimonials</a></p>
             </nav>
 
             <section>
@@ -31,77 +65,87 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Sed augue mi</strong>, posuere in cursus sit amet, bibendum quis sapien. Duis ullamcorper orci et nisi condimentum interdum. Curabitur enim quam, ullamcorper eu erat eleifend, sollicitudin sagittis turpis. Curabitur nec ultrices felis, at malesuada augue. Nulla facilisi. Integer semper magna id nisl volutpat ornare. Quisque tempor vehicula metus.</p>
                             
                         <p>Cras iaculis sed odio vel hendrerit. Sed vehicula elementum urna, at tempus risus ullamcorper sit amet. Vivamus posuere urna lectus, nec ullamcorper turpis ullamcorper sit amet. Nulla quis ipsum ac eros condimentum facilisis. Donec id feugiat turpis. Donec sit amet eros posuere nulla efficitur venenatis non non nisl. Duis vitae blandit nunc. Nulla faucibus ante malesuada nunc mollis, id pulvinar sapien tincidunt. Praesent in commodo mauris. <strong>Phasellus posuere</strong> nisi vitae risus pharetra tempor. Integer ac faucibus mauris, in suscipit est.</p>
+                <div class="clear-float"></div>
                 </article>
 
                 <article id="past-experiences">
                     <h2><em>Past Experiences</em></h2>
                         <img src="images/past.png" alt="Photo of open landscape" />
-                        <table border="1">
-                            <caption>Employment History</caption>
-                            <tr>
-                                <th>Years of Employment</th>
-                                <th>Title</th>
-                                <th>Company</th>
-                            </tr>
-                            <tr>
-                                <td>2019-Present</td>
-                                <td>Apprentice</td>
-                                <td>The Software Guild</td>
-                            </tr>
-                            <tr>
-                                <td>2017-2018</td>
-                                <td>Student</td>
-                                <td>Western Kentucky University</td>
-                            </tr>
-                            <tr>
-                                <td>2016-2017</td>
-                                <td>Help Desk Technician</td>
-                                <td>Apex Systems</td>
-                            </tr>
-                            <tr>
-                                <td>2011-2015</td>
-                                <td>Client Systems Technician</td>
-                                <td>United States Air Force</td>
-                            </tr>
-                        </table>
+                        <div class="right-content">
+                            <table>
+                                <caption>Employment History</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Years of Employment</th>
+                                        <th>Title</th>
+                                        <th>Company</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2019-Present</td>
+                                        <td>Apprentice</td>
+                                        <td>The Software Guild</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2017-2018</td>
+                                        <td>Student</td>
+                                        <td>Western Kentucky University</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2016-2017</td>
+                                        <td>Help Desk Technician</td>
+                                        <td>Apex Systems</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2011-2015</td>
+                                        <td>Client Systems Technician</td>
+                                        <td>United States Air Force</td>
+                                    </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                        <div class="clear-float"></div>
                 </article>
 
                 <article id="hobbies">
                     <h2><em>Hobbies</em></h2>
                         <img src="images/cheers.png" alt="Photo of two beers cheersing each other" />
-                        <ul>
-                            <li>TV Shows</li>
-                            <ol>
-                                <li>Game Of Thrones</li>
-                                <li>Futurama</li>
-                                <li>Workaholics</li>
-                            </ol>
-                            <li>Video Games</li>
-                            <ol>
-                                <li>Destiny 2</li>
-                                <li>The Division 2</li>
-                                <li>World of Warcraft</li>
-                            </ol>
-                        </ul>
-                        <ul>
-                            <li>Sports</li>
+                        <div class="right-content">
                             <ul>
-                                <li>Basketball</li>
-                                <li>Football</li>
-                                <li>Golf</li>
+                                <li>TV Shows</li>
+                                <ol>
+                                    <li>Game Of Thrones</li>
+                                    <li>Futurama</li>
+                                    <li>Workaholics</li>
+                                </ol>
+                                <li>Video Games</li>
+                                <ol>
+                                    <li>Destiny 2</li>
+                                    <li>The Division 2</li>
+                                    <li>World of Warcraft</li>
+                                </ol>
                             </ul>
-                            <li>Outdoor Activites</li>
                             <ul>
-                                <li>Jogging</li>
-                                <li>Hiking</li>
-                                <li>Breathings sweet outdoor air</li>
+                                <li>Sports</li>
+                                <ul>
+                                    <li>Basketball</li>
+                                    <li>Football</li>
+                                    <li>Golf</li>
+                                </ul>
+                                <li>Outdoor Activites</li>
+                                <ul>
+                                    <li>Jogging</li>
+                                    <li>Hiking</li>
+                                    <li>Breathing sweet outdoor air</li>
+                                </ul>
                             </ul>
-                        </ul>
+                        </div>
+                        <div class="clear-float"></div>        
                 </article>
             </section>
 
             <footer>    
-                <hr />
                 <p>&copy; 2020  Seth Murphy. All Rights Reserved.</p>
             </footer>
 
