@@ -3,6 +3,8 @@ Creator: Seth Murphy
 Date created: Today's date
 Date last modified: 
 */
+
+/*------ Main Elements ------*/
 body {
     background-color: #FBFCF3;
     font-family: Arial, Helvetica, sans-serif;
@@ -33,6 +35,42 @@ article img {
     float: left;
 }
 
+article {
+    margin-bottom: 16px;
+}
+
+/*----- Navigation ------*/
+nav a {
+    background-color: #035E7B;
+    color: #fef9ff;
+    padding: 8px;
+    border: thin solid #0d1f2d;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 20px;
+    width: 100px;
+    float: left;   
+}
+
+nav a:visited {
+    color: #e4c3ad; 
+}
+
+nav a:hover {
+    background-color: #fef9ff;
+    color: #035E7B;
+}
+
+nav a:active {
+    font-weight: bold;
+}
+
+nav a:active {
+    font-weight: bold;
+}
+
+/*------ Classes ------*/
 .right-content {
     float: left;
 }
