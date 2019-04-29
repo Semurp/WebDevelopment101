@@ -1,7 +1,6 @@
 /*------ Main Elements ------*/
 body {
     background-color: #BFC0C0;
-    margin: 0 auto;
 }
 
 .jumbotron, footer {
@@ -10,7 +9,7 @@ body {
     padding: 30px 10px 20px 10px;
 }
 
-header h1, h2 {
+header h1, h3 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 2.8em;
 }
@@ -55,6 +54,11 @@ h3 {
     font-size: 1.6em;
 }
 
+p {
+    text-align: center;
+    margin-top: 10px;
+}
+
 label {
     font-weight: bold;
 }
@@ -64,6 +68,14 @@ caption {
     font-size: 1.2em;
     margin-bottom: 8px;
 }
+
+.center {
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
 
 /*------ Table Elements ------*/
 
